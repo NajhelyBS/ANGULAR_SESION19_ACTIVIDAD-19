@@ -8,12 +8,16 @@ import { Observable } from 'rxjs';
 })
 export class PokedexService {
 
+// declarando url con la api de los pokemones  
   urlPokejson ="https://pokeapi.co/api/v2/pokemon?offset=20&limit=20";
   
+
+// verificando que se esté consumiendo bien el servidor 
   constructor(private http:HttpClient) { 
     console.log("Conección con la pokedex correcta");
   }
 
+//leyendo data
   getValues () {
     return this.http.get<any>(this.urlPokejson);
   }
