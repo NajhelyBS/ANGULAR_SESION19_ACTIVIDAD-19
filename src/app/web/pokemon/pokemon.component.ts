@@ -11,7 +11,13 @@ export class PokemonComponent {
   public pokemons:any = [];
 
   constructor(private pokedex:PokedexService){
+    this.pokedex.getValues().subscribe((json:any) => {
+      console.log(json);
+      this.pokemons = json;
+    })
+
     
+
   }
 
 }

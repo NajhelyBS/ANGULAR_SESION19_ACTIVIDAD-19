@@ -13,4 +13,8 @@ export class PokedexService {
   constructor(private http:HttpClient) { 
     console.log("Conección con la pokedex correcta");
   }
+
+  getValues () {
+    return this.http.get<any>(this.urlPokejson);
+  }
 }
