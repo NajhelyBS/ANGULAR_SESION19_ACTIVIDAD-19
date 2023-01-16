@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PokedexService } from 'src/app/pokedex.service';
 
 @Component({
   selector: 'app-pokemon',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./pokemon.component.css']
 })
 export class PokemonComponent {
+
+  public pokemons:any = [];
+
+  constructor(private pokedex:PokedexService){
+    
+  }
 
 }

@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -7,11 +8,13 @@ import { WebModule } from './web/web.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+   
   ],
   imports: [
     BrowserModule,
     WebModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
