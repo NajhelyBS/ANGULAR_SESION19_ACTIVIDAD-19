@@ -21,7 +21,7 @@ export class PokemonComponent implements OnInit {
   }
 
   catchPokemon(){
-    
+
     let valPokemon = {};
 
     for(let i = 1; i <= 150; i++) {
@@ -41,10 +41,14 @@ export class PokemonComponent implements OnInit {
 
         error => {
           console.log(error);
-        }
+        },
 
+        //ordenar la posicion de los pokemones
+          () => {
+          this.Listpokemon.sort((primero, ultimo) => primero.position - ultimo.position);
+          }
+      );
 
-      )
     }
   }
 

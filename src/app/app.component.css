@@ -1,8 +1,7 @@
-body {
-    border: solid red;
-}
+
 
 main {
     padding: 2em;
-    background-color: pink;
+    background-image: url(https://rare-gallery.com/uploads/posts/975084-Pokmon-tile-cartoon-pattern.jpg);
+    background-attachment: fixed;
 }
