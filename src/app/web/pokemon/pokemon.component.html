@@ -16,12 +16,29 @@
 
     <img src="{{pokemon.sprites.front_default}}">
     * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-    
+
+<section>
+
+    <div class="poke-container " id="poke-container">
+
+    <div *ngFor="let pokemon of Listpokemon"
+    class="pokemon" style="background-color: rgb(222, 253, 224);">
+        <div class="img-container mx-auto d-block">
+            <img src={{pokemon.image}} alt="{{pokemon.name}}" >
+        </div>
+        <div class="info">
+            <span class="number">{{pokemon.position}}</span>
+            <h3 class="name text-center">{{pokemon.name | uppercase}}</h3>
+            <small class="type">Type: <span>grass</span> </small>
+        </div>
+        </div>
+    </div>
+
+</section>
     
     <pre>{{ Listpokemon | json}}</pre>
     
    
    
- 
       
 </body>
