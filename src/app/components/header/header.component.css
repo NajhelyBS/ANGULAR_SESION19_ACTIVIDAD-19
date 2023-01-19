@@ -1,0 +1,28 @@
+.navbar-brand {
+    color: white;
+    font-weight: 900;
+}
+
+.nav-link {
+    color: rgb(87, 85, 78);
+}
+
+.nav-link {
+    margin-right: 1.8em;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border-bottom: solid  rgb(36, 39, 36) ;
+    width: 4.6em;
+}
+.item{
+    background: #2a75bb;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2a75bb, #ffcd057e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2a75bb, #ffcd057e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffcb05;
+    font-size: 18px;
+    -webkit-text-stroke-width: 1.8px;
+    -webkit-text-stroke-color: #2a75bb;
+    font-weight: 900;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 0.6px #3c5aa6;
+}

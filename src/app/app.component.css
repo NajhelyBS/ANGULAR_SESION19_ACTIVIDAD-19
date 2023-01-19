@@ -1,4 +1,8 @@
 body {
     border: solid red;
+}
+
+main {
     padding: 2em;
+    background-color: pink;
 }
