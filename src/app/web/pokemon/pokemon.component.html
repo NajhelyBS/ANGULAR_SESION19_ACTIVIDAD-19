@@ -1,21 +1,10 @@
 <body>
 
     <div class="d-flex justify-content-center">
-    <input type="text" class="form-control" placeholder="Buscar pokemón">
-    <button class="btn btn-outline-primary" >Buscar</button>
+    <input type="text" class="form-control"  placeholder="Buscar pokemón">
+    <button class="btn btn-outline-primary" (click)="BuscarPokemon(buscar.value)" #buscar
+    >Buscar</button>
     </div>
-<!-- * * * * * * * * * * * * * * * * * * * * * * *
-    <li class="card col-md-3" *ngFor="let pokemon of pokemons">
-        <img class="card-img-top" src="" alt="Card image cap" (load)="p.imageLoaded = true" [attr.src]="p.sprite">
-        <div class="card-footer text-center">
-          <small class="text-muted ">{{ p.name | uppercase}}</small>
-        </div>
-    </li>
-  
-<li *ngFor="let pokemon of pokemons"></li>
-
-    <img src="{{pokemon.sprites.front_default}}">
-    * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <section class="mt-5">
 
