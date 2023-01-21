@@ -1,5 +1,6 @@
 <body>
 
+    <!--buscador-->
     <div class="d-flex justify-content-center">
     <input #buscar type="text" class="form-control"  placeholder="Buscar pokemón" name="search">
     <button class="btn btn-outline-primary"  (click)="Filtrar(buscar.value)"
@@ -8,6 +9,7 @@
 
 <section class="mt-5">
 
+    <!--lista de pokemones -->
     <div class="poke-container " id="poke-container">
 
     <div *ngFor="let pokemon of Listpokemon"

@@ -21,7 +21,7 @@ ngOnInit(): void {
 
 }
 
-
+//obtener valores del pokemon elegido para mostrar
 getDataPokemon(id:any){
   this.pokedex.getPoke(id).subscribe(
       res => {

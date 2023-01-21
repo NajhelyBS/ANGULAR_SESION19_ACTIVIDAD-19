@@ -53,7 +53,6 @@ export class PokemonComponent implements OnInit {
   
     }
 
-  
 
     Filtrar(buscar:any){
       this.ruta.navigate(['/catchpokemon',String(buscar).toLocaleLowerCase()]);
