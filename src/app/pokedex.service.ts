@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class PokedexService {
 
 // declarando url con la api de los pokemones  
-  urlPokejson ="https://pokeapi.co/api/v2";
+  urlPokejson:string ="https://pokeapi.co/api/v2";
 
   Pokemondata:any [] = [];
 
@@ -24,9 +24,9 @@ export class PokedexService {
   }
   
 //filtrado para la búsqueda del pokemon
-  filterpoke(buscar:string){
-  return this.http.get<any>(`${this.urlPokejson}/pokemon/${buscar}`)
-}
+  getPoke(buscar:string) {
+    return this.http.get<any>(`${this.urlPokejson}/pokemon/${buscar}`)
+  }
 
 
 }

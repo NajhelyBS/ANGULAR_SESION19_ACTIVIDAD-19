@@ -1,0 +1,65 @@
+#card {
+    background-color: #5c84db31;
+    box-shadow: 0px 0px 12px 3px  #FAC705;
+    
+}
+    
+tbody{
+    border: red solid;
+    width: 100%;
+    border:#0f2452 dashed 3px;
+
+}
+
+#title {
+    color:white ;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.7px;
+    font-weight: 900;
+    background: #00c6ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+#sub {
+    color:#0b0258 ;
+    font-weight: 900;
+}
+
+button {
+    color: black;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 0.7px;
+    letter-spacing: 3px;
+    font-weight: 900;
+    width: 8em;
+    height: 3em;
+background: #1723ce;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ebeb18c4, #1941c4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f7f720b9, #163ab1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.pokemonname {
+    font-size: 50px;
+    font-weight: 900;
+    color: #FAC705;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #3D64B8 ;
+    letter-spacing: 3px;
+
+}
+
+span {
+    background-color: #3D64B8;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    font-size: 35px;
+    -webkit-text-stroke-width: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+img:hover {
+    transform: scale(1.3);
+}
+

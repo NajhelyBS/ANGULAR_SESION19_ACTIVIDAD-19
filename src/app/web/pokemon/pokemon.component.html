@@ -1,8 +1,8 @@
 <body>
 
     <div class="d-flex justify-content-center">
-    <input type="text" class="form-control"  placeholder="Buscar pokemón">
-    <button class="btn btn-outline-primary" (click)="BuscarPokemon(buscar.value)" #buscar
+    <input #buscar type="text" class="form-control"  placeholder="Buscar pokemón" name="search">
+    <button class="btn btn-outline-primary"  (click)="Filtrar(buscar.value)"
     >Buscar</button>
     </div>
 

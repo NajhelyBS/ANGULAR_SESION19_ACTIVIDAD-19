@@ -4,6 +4,7 @@ import { PokemonComponent } from './pokemon/pokemon.component';
 import { FormsModule } from '@angular/forms';
 import { PokemonViewComponent } from './pokemon-view/pokemon-view.component';
 import { RouterModule } from '@angular/router';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   declarations: [
@@ -14,10 +15,12 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     RouterModule,
+    ComponentsModule,
     FormsModule,
   ],
   exports: [
     PokemonComponent,
+    PokemonViewComponent,
   ]
 })
 export class WebModule { }

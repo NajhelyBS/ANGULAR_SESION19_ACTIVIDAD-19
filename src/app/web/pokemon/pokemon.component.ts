@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { PokedexService } from 'src/app/pokedex.service';
 import { OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-pokemon',
@@ -12,9 +14,9 @@ export class PokemonComponent implements OnInit {
 
   //new array al que transferiremos los datos
   Listpokemon: any [] = [];
+  searchValue = '';
 
-  constructor(private pokedex:PokedexService, private route:Router, router:ActivatedRoute){}
-
+  constructor(private pokedex:PokedexService, private ruta:Router, router:ActivatedRoute){}
 
   ngOnInit(): void {
     this.catchPokemon();
@@ -51,11 +53,11 @@ export class PokemonComponent implements OnInit {
   
     }
 
-    BuscarPokemon(buscar:any){
-      this.route.navigate(['/informacion', String(buscar)]);
-    }
-
   
+
+    Filtrar(buscar:any){
+      this.ruta.navigate(['/catchpokemon',String(buscar).toLocaleLowerCase()]);
+    }
   }
 
 
